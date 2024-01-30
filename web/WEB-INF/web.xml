@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	 version="6.0">
+         
+    <welcome-file-list>
+        <welcome-file>product_page</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>Cart</servlet-name>
+        <jsp-file>/user/cart.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ConfirmOrder</servlet-name>
+        <jsp-file>/user/confirm-order.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ConfirmOrder</servlet-name>
+        <url-pattern>/confirm-order-page</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Address</servlet-name>
+        <jsp-file>/user/address.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Address</servlet-name>
+        <url-pattern>/address</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Order</servlet-name>
+        <jsp-file>/user/order.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Order</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BuyNowPage</servlet-name>
+        <jsp-file>/user/buy_now_confirm.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BuyNowPage</servlet-name>
+        <url-pattern>/buy_now_page</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminPage</servlet-name>
+        <jsp-file>/admin/main-page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminPage</servlet-name>
+        <url-pattern>/admin-page</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EditBookPage</servlet-name>
+        <jsp-file>/admin/edit-page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditBookPage</servlet-name>
+        <url-pattern>/edit-page</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddBookPage</servlet-name>
+        <jsp-file>/admin/add-book-page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBookPage</servlet-name>
+        <url-pattern>/add-book-page</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>NewOrderPage</servlet-name>
+        <jsp-file>/admin/new-order-page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewOrderPage</servlet-name>
+        <url-pattern>/new-order-page</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeliverOrderPage</servlet-name>
+        <jsp-file>/admin/deliver-order-page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeliverOrderPage</servlet-name>
+        <url-pattern>/deliver-order-page</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+        <servlet-name>CancelOrderPage</servlet-name>
+        <jsp-file>/admin/cancel-order-page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelOrderPage</servlet-name>
+        <url-pattern>/cancel-order-page</url-pattern>
+    </servlet-mapping>
+
+<!--    <servlet>
+        <servlet-name>Add to Cart</servlet-name>
+        <jsp-file>/user/cart.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Add to Cart</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>-->
+    
+</web-app>
