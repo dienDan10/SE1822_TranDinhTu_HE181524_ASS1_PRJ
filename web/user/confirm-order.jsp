@@ -2,6 +2,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -45,7 +46,9 @@
                         
                         <div class="text-center bg-light p-2">
                             
-                            <p class="mb-0 text-success fs-5">Total: <span class="fw-light fs-3">$${total}</span></p>
+                            <p class="mb-0 text-success fs-5">Total: <span class="fw-light fs-3">
+                                    $<fmt:formatNumber type="number" maxIntegerDigits="2" value="${total}" />
+                            </span></p>
                         </div>
                         
                     </div>

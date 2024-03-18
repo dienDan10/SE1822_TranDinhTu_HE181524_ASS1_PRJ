@@ -43,7 +43,9 @@ public class AddBook extends HttpServlet {
                 String image = part.getSubmittedFileName();
                 book.setImage(image);
                 String path = getServletContext().getRealPath("/image" + File.separator + image);
+                System.out.println("Picture path: " + path);
                 part.write(path);
+                
             } catch(Exception e) {
                 throw new Exception("Saving image failed!");
             }

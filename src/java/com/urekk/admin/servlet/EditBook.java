@@ -111,6 +111,7 @@ public class EditBook extends HttpServlet {
         if (image != null && !image.isEmpty()) {
             // add the picture to the image folder
             String path = getServletContext().getRealPath("/image" + File.separator + image);
+            System.out.println("Picture path: " + path);
             InputStream in = part.getInputStream();
             boolean isSaved = saveFile(in, path);
             // if save image, else return to edit page
